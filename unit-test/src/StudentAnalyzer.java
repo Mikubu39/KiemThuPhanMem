@@ -9,7 +9,7 @@ public class StudentAnalyzer {
      * - Nếu danh sách rỗng, trả về 0
      */
     public int countExcellentStudents(List<Double> scores) {
-        if (scores == null || scores.isEmpty()) {
+        if ( scores.isEmpty()) {
             return 0;
         }
         int count = 0;
@@ -27,7 +27,7 @@ public class StudentAnalyzer {
      * @return điểm trung bình của các điểm hợp lệ
      */
     public double calculateValidAverage(List<Double> scores) {
-        if (scores == null || scores.isEmpty()) {
+        if (scores.isEmpty()) {
             return 0.0;
         }
         double sum = 0.0;
