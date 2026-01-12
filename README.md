@@ -1,1 +1,50 @@
-KiemThuPhanMem Bài tập kiểm thử phần mềm. Bài tập chương 1: Đây là ảnh chụp màn hình trò chơi/bài tập Can't Dissoee với điểm số 7388. Bài tập chương 2: Mô tả bài toán - Lớp StudentAnalyzer có hai phương thức chính: countExcellentStudents(List<Double> scores) dùng để đếm số học sinh đạt loại Giỏi (điểm lớn hơn hoặc bằng 8.0), bỏ qua các điểm không hợp lệ (nhỏ hơn 0 hoặc lớn hơn 10); calculateValidAverage(List<Double> scores) dùng để tính trung bình cộng của các điểm hợp lệ trong khoảng từ 0 đến 10, nếu không có điểm hợp lệ nào thì trả về 0. Cấu trúc thư mục unit-test gồm: thư mục src chứa file StudentAnalyzer.java là code logic chính, thư mục test chứa file StudentAnalyzerTest.java với 10 test case viết bằng JUnit 5, thư mục lib chứa file junit-platform-console-standalone-6.0.2.jar, và thư mục bin chứa các file .class sau khi biên dịch. Hướng dẫn biên dịch: tạo thư mục bin bằng lệnh mkdir -p unit-test/bin, sau đó biên dịch bằng lệnh javac -cp "unit-test/lib/junit-platform-console-standalone-6.0.2.jar" -d unit-test/bin unit-test/src/.java unit-test/test/.java. Hướng dẫn chạy test: dùng lệnh java -jar unit-test/lib/junit-platform-console-standalone-6.0.2.jar execute --class-path unit-test/bin --scan-classpath. Kết quả chạy test mẫu cho thấy toàn bộ 10 test đều pass (ảnh minh họa: https://github.com/user-attachments/assets/942c9162-c137-4ab8-be84-85f66998640b). Ghi chú: hãy đảm bảo đường dẫn đến file JAR JUnit chính xác, có thể nâng cấp lên phiên bản JUnit mới hơn nếu cần, và có thể thêm tùy chọn --details tree hoặc --reports-dir=reports để xem báo cáo chi tiết hơn. Chúc bạn học tốt môn Kiểm thử phần mềm!
+# KiemThuPhanMem
+
+Bài tập môn Kiểm thử phần mềm
+
+## Bài tập chương 1
+Kết quả của bài tập trang Can't Unsee:
+<img src="https://github.com/user-attachments/assets/cb461802-3f15-4c06-9c38-a6d444d13d1f" width="800" alt="Màn hình Can't Dissoee - Điểm 7388">
+
+## Bài tập chương 2
+
+### Mô tả bài toán
+
+Lớp `StudentAnalyzer` bao gồm 2 phương thức:
+
+- `countExcellentStudents(List<Double> scores)`  
+  Đếm số học sinh đạt loại **Giỏi** (điểm ≥ 8.0).  
+  Bỏ qua các điểm không hợp lệ (< 0 hoặc > 10).
+
+- `calculateValidAverage(List<Double> scores)`  
+  Tính trung bình các điểm **hợp lệ** (trong khoảng 0–10).  
+  Nếu không có điểm hợp lệ nào thì trả về **0**.
+
+### Cấu trúc thư mục
+```text
+unit-test/
+├── src/
+│   └── StudentAnalyzer.java          # Code logic chính
+├── test/
+│   └── StudentAnalyzerTest.java      # 10 test case (JUnit 5)
+├── lib/
+│   └── junit-platform-console-standalone-6.0.2.jar
+└── bin/                              # Các file .class sau khi biên dịch
+```
+### Hướng dẫn biên dịch (chạy trong ô nhập lệnh của môi trường lập trình)
+```text
+mkdir -p unit-test/bin
+
+javac -cp "unit-test/lib/junit-platform-console-standalone-6.0.2.jar" \
+      -d unit-test/bin \
+      unit-test/src/*.java unit-test/test/*.java
+```
+### Hướng dẫn chạy kiểm thử (chạy trong ô nhập lệnh của môi trường lập trình)
+```text
+java -jar unit-test/lib/junit-platform-console-standalone-6.0.2.jar \
+     execute \
+     --class-path unit-test/bin \
+     --scan-classpath
+```
+### Kết quả sau khi thực hiện kiểm thử:
+<img width="1375" height="948" alt="image" src="https://github.com/user-attachments/assets/942c9162-c137-4ab8-be84-85f66998640b" />
