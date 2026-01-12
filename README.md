@@ -32,7 +32,7 @@ unit-test/
 └── bin/                              # Các file .class sau khi biên dịch
 ```
 ### Hướng dẫn biên dịch (chạy trong ô nhập lệnh của môi trường lập trình)
-```text
+```bash
 mkdir -p unit-test/bin
 
 javac -cp "unit-test/lib/junit-platform-console-standalone-6.0.2.jar" \
@@ -40,7 +40,7 @@ javac -cp "unit-test/lib/junit-platform-console-standalone-6.0.2.jar" \
       unit-test/src/*.java unit-test/test/*.java
 ```
 ### Hướng dẫn chạy kiểm thử (chạy trong ô nhập lệnh của môi trường lập trình)
-```text
+```bash
 java -jar unit-test/lib/junit-platform-console-standalone-6.0.2.jar \
      execute \
      --class-path unit-test/bin \
