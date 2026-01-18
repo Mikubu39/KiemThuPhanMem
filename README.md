@@ -48,3 +48,11 @@ java -jar unit-test/lib/junit-platform-console-standalone-6.0.2.jar \
 ```
 ### Kết quả sau khi thực hiện kiểm thử:
 <img width="1375" height="948" alt="image" src="https://github.com/user-attachments/assets/942c9162-c137-4ab8-be84-85f66998640b" />
+
+## Bài tập chương 3:
+Kết quả kiểm thử chức năng đăng nhập:
+
+<img width="2560" height="1600" alt="Screenshot 2026-01-13 232005" src="https://github.com/user-attachments/assets/2ae9bbef-e90d-4cc8-a5da-23676a1e2a63" />
+Kết quả kiểm thử chức năng giỏ hàng:
+
+<img width="2560" height="1600" alt="Screenshot 2026-01-13 232023" src="https://github.com/user-attachments/assets/3b055ed4-a1b0-44f8-9a7d-3b870015c55c" />
