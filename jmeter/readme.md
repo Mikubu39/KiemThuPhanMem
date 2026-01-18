@@ -13,9 +13,8 @@
 - Số users: 10
 - Loop: 5 lần
 - Hành vi: GET /get
-- Kết quả (thay bằng screenshot hoặc bảng thực tế):
-
-
+- Kết quả:
+<img width="1930" height="397" alt="Screenshot 2026-01-18 205903" src="https://github.com/user-attachments/assets/db573f45-3e3a-4afc-8527-1f6f50e2458c" />
 
 ## Kịch bản 2 - Heavy Load
 - Số users: 50
@@ -23,17 +22,14 @@
 - Loop: 10
 - Hành vi: GET /get và GET /delay/2 (2 trang)
 - Kết quả:
-
-
-*(Chèn screenshot)*
+<img width="1937" height="534" alt="Screenshot 2026-01-18 210306" src="https://github.com/user-attachments/assets/e8b34f5a-477d-4c3a-a9af-6359555b830b" />
 
 ## Kịch bản 3 - Custom Personalized
 - Số users: 20
 - Duration: 60 giây
 - Hành vi: POST /post với data cá nhân hóa (user_id, timestamp khác nhau cho từng thread)
 - Kết quả:
-
-
+<img width="1931" height="151" alt="Screenshot 2026-01-18 210050" src="https://github.com/user-attachments/assets/6612a0af-3a26-4046-9af5-1a0a497d73f1" />
 
 ## Phân tích tổng quan
 - Trang httpbin.org xử lý rất tốt với tải nhỏ- trung bình.
