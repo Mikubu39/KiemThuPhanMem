@@ -35,19 +35,15 @@ unit-test/
 ```bash
 mkdir -p unit-test/bin
 
-javac -cp "unit-test/lib/junit-platform-console-standalone-6.0.2.jar" \
-      -d unit-test/bin \
-      unit-test/src/*.java unit-test/test/*.java
+javac -cp "unit-test/lib/junit-platform-console-standalone-6.0.2.jar" -d unit-test/bin unit-test/src/*.java unit-test/test/*.java
 ```
 ### Hướng dẫn chạy kiểm thử (chạy trong ô nhập lệnh của môi trường lập trình)
 ```bash
-java -jar unit-test/lib/junit-platform-console-standalone-6.0.2.jar \
-     execute \
-     --class-path unit-test/bin \
-     --scan-classpath
+java -jar unit-test/lib/junit-platform-console-standalone-6.0.2.jar execute --class-path unit-test/bin --scan-classpath
 ```
 ### Kết quả sau khi thực hiện kiểm thử:
-<img width="1375" height="948" alt="image" src="https://github.com/user-attachments/assets/942c9162-c137-4ab8-be84-85f66998640b" />
+<img width="950" height="1278" alt="image" src="https://github.com/user-attachments/assets/8a9c434f-b4aa-4abc-9db1-5435c63adad7" />
+Đã đúng đủ các điều kiện về BVA, độ bao phủ... 
 
 ## Bài tập chương 3:
 Kết quả kiểm thử chức năng đăng nhập:
